@@ -1,0 +1,136 @@
+:root {
+  /* Primary Colors */
+  --clr-pale-blue: hsl(225, 100%, 94%);
+  --clr-bright-blue: hsl(245, 75%, 52%);
+
+  /* Neutral */
+  --clr-very-pale-blue: hsl(225, 100%, 98%);
+  --clr-desaturated-blue: hsl(224, 23%, 55%);
+  --clr-dark-blue: hsl(223, 47%, 23%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Red Hat Display", sans-serif;
+  background-color: var(--clr-pale-blue);
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  width: 450px;
+  height: 695px;
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card_img_top {
+  width: 100%;
+}
+
+.card_body {
+  width: 80%;
+  height: 380px;
+  margin: 45px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card_title {
+  font-size: 28px;
+}
+
+.card_text {
+  width: 81%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5rem;
+  text-align: center;
+  color: var(--clr-desaturated-blue);
+}
+
+.price-container {
+  width: 100%;
+  background-color: var(--clr-very-pale-blue);
+  padding: 25px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price_music_icon {
+}
+
+.price_content {
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+.price_title {
+  font-size: 17px;
+}
+
+.price_price {
+  color: var(--clr-desaturated-blue);
+}
+
+.price_button {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--clr-bright-blue);
+}
+
+.btn {
+  margin-top: 10px;
+  align-self: stretch;
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  color: #fff;
+  background-color: var(--clr-bright-blue);
+  border-radius: 10px;
+  box-shadow: 0 10px 15px 7px var(--clr-pale-blue);
+}
+
+.btn a {
+  color: #fff;
+}
+
+.cancel {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--clr-desaturated-blue);
+}
+
+.btn a,
+.cancel {
+  text-decoration: none;
+}
+
+/* ======================= 
+        ATTRIBUTION 
+ ======================= */
+/* .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+} */
